@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/idk.css">
+</head>
+<body>
+
+    <header>
+        <a href="../pages/media.html">МЕДИА</a>
+        <a href="../index.html"><img src="../public/logo_white.png" alt=""></a>
+        <a href="#" id="active">СТРАНИЦА</a>
+    </header>
+
+    <div class="wrapper">
+        <div id="1" class="block">
+            <h1>Нумерованный список</h1>
+            <ol>
+                <li>Первый элемент</li>
+                <li>Второй элемент</li>
+                <li>Третий элемент</li>
+            </ol>
+        </div>
+
+        <div id="2" class="block">
+            <h1>Маркерованный список</h1>
+            <ul>
+                <li>Первый элемент</li>
+                <li>Второй элемент</li>
+                <li>Третий элемент</li>
+            </ul>
+        </div>
+
+        <div id="3" class="block">
+            <h1>Список определений</h1>
+            <dl>
+                <dt>War Thunder</dt>
+                    <dd>Компьютерная многопользовательская онлайн-игра с элементами симулятора, посвящённая авиации, бронетехнике и флоту довоенного периода, а также Второй мировой войны и послевоенного периода. Проект разрабатывается и издаётся компанией Gaijin Entertainment.</dd>
+            </dl>
+        </div>
+
+        <div id="4" class="block">
+            <h2>Кнопки</h2>
+            <button class="button prompt" id="my_prompt">Prompt</button>
+            <button class="button alert" onclick="Alo()">Alert</button>
+        </div>
+        <span id="myPlace">Это изменяемый текст от кнопки Prompt</span>
+
+        <div class="anchor" id="back">
+            <a href="#anc1">Якорь1</a>
+            <a href="#anc2">Якорь2</a>
+            <a href="#anc3">Якорь3</a>
+            <div class="anchor1" id="anc1">
+                <span>Якорь1</span>
+                <a href="#back">Вернуться наверх</a>
+            </div>
+            <div class="anchor1" id="anc2">
+                <span>Якорь2</span>
+                <a href="#back">Вернуться наверх</a>
+            </div>
+            <div class="anchor1" id="anc3">
+                <span>Якорь3</span>
+                <a href="#back">Вернуться наверх</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="../public/logo_white.png" alt="">
+    </footer>
+
+    <script src="/app.js"></script>
+    <script>
+        function Alo() {
+        alert("Алоооо, вставай, доброе утро!!!")
+    }
+    </script>
+</body>
+</html>
